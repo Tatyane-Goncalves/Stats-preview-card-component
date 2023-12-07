@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+:root{
+    --mainbg: hsl(233, 47%, 7%);
+    --cardbg: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+
+    --white: hsl(0, 0%, 100%);
+    --mainp: hsla(0, 0%, 100%, 0.75);
+    --stathea: hsla(0, 0%, 100%, 0.6);
+
+    --lexend: 'Lexend Deca', sans-serif;
+    --inter: 'Inter', sans-serif;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--mainbg);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    height: 460px;
+    width: 1100px;
+    background-color: var(--cardbg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.stats-text{
+    padding: 40px 40px;
+}
+
+.stats-text h1{
+    color: var(--white);
+    font-family: var(--inter);
+    line-height: 2.4rem;
+}
+
+.stats-text span{
+    color: var(--accent);
+}
+
+.discover{
+    color: var(--stathea);
+    font-family: var(--inter);
+    font-weight: 400;
+    padding-top: 36px;
+    line-height: 1.6rem;
+    font-size: 15px;
+}
+
+.cards{
+    display: flex;
+    margin-top: 60px;
+    gap: 55px;
+}
+
+
+.card h2{
+    font-size: 25px;
+    color: var(--white);
+    font-family:var(--inter);
+    font-weight: 700;
+}
+
+.card p{
+    color: var(--stathea);
+    font-family: var(--inter);
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.stats-img{
+    background: url('images/image-header-desktop.jpg'), rgba(170, 92, 219, 0.804);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 460px;
+    width: 1300px;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    font-family: var(--inter);
+    color: white;
+}
+.attribution a { 
+        color: var(--stathea); 
+        text-decoration: none;
+        font-weight: 700;
+    }
